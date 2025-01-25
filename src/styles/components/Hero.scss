@@ -1,0 +1,90 @@
+.hero {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+  
+  .hero-content {
+    max-width: 80ch;
+    width: 100%;
+  }
+
+  .terminal-window {
+    background: rgba(0, 0, 0, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    overflow: hidden;
+  }
+
+  .terminal-header {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+
+    &:nth-child(1) { background: #ff5f56; }
+    &:nth-child(2) { background: #ffbd2e; }
+    &:nth-child(3) { background: #27c93f; }
+  }
+
+  .terminal-body {
+    padding: 2rem;
+  }
+
+  .hero-title {
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+    margin-bottom: 2rem;
+    
+    .prompt {
+      color: #27c93f;
+      margin-right: 0.5rem;
+    }
+
+    .response {
+      color: #fff;
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+
+    .prompt {
+      color: #ffbd2e;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .cta-button {
+    background: rgba(39, 201, 63, 0.1);
+    border: 1px solid #27c93f;
+    color: #27c93f;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+    text-align: left;
+
+    &:hover {
+      background: rgba(39, 201, 63, 0.2);
+    }
+  }
+}

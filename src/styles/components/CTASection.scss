@@ -1,0 +1,113 @@
+.cta-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(
+    to bottom,
+    var(--bg) 0%,
+    var(--bg-light) 100%
+  );
+  
+  .terminal-window {
+    max-width: 90ch;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.95);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+
+  .terminal-header {
+    background: var(--bg-light);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+
+    .terminal-title {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+  }
+
+  .terminal-body {
+    padding: 2rem;
+  }
+
+  .ascii-art {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    
+    pre {
+      color: var(--primary);
+      font-size: 0.8rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+
+  .terminal-content {
+    max-width: 64ch;
+    margin: 0 auto;
+  }
+
+  .command-line {
+    margin-bottom: 1rem;
+    color: var(--text);
+    
+    .prompt {
+      color: var(--primary);
+      margin-right: 0.5rem;
+    }
+  }
+
+  .description {
+    color: var(--text-dim);
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  .cta-button {
+    width: 100%;
+    background: var(--bg-light);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .icon {
+      opacity: 0.8;
+    }
+
+    &:hover {
+      background: rgba(39, 201, 63, 0.1);
+      transform: translateY(-1px);
+    }
+  }
+
+  .status-message {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    
+    .status {
+      color: var(--primary);
+      animation: pulse 2s infinite;
+    }
+  }
+
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+}

@@ -1,0 +1,41 @@
+.benefits {
+  padding: 4rem 2rem;
+  max-width: 120ch;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+
+  .section-title {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .benefit {
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .terminal-cursor {
+      animation: blink 1s step-end infinite;
+    }
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+} 

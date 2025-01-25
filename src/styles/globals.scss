@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+  --primary: #27c93f;
+  --secondary: #ffbd2e;
+  --warning: #ff5f56;
+  --text: rgba(255, 255, 255, 0.9);
+  --text-dim: rgba(255, 255, 255, 0.6);
+  --bg: #000;
+  --bg-light: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Fira Code', 'IBM Plex Mono', monospace;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.content {
+  width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+section {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--border),
+      transparent
+    );
+  }
+}
