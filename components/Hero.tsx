@@ -21,9 +21,9 @@ const Hero = () => {
               </span>
             </h1>
             <p className="hero-subtitle">
-              <span className="prompt">></span> Combat disinformation with precision.<br/>
-              <span className="prompt">></span> On-demand fact-checking & data visualization.<br/>
-              <span className="prompt">></span> Powered by viral social AI Agent._
+              <span className="prompt">{'>'}</span> Combat disinformation with precision.<br/>
+              <span className="prompt">{'>'}</span> On-demand fact-checking & data visualization.<br/>
+              <span className="prompt">{'>'}</span> Powered by viral social AI Agent._
             </p>
             <button className="cta-button">
               $ ./get-started.sh
